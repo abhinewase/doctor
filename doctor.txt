@@ -1,0 +1,19 @@
+docker version
+mkdir hello-docker #file name
+cd hello-docker
+code .
+
+docker built -t hello docker
+docker img ls
+node app.js
+
+create file in vs app.js n Dockerfile
+
+app.js-console.log("Hello World")
+
+doc-FROM node:alphine
+COPY . /app
+WORKDIR /app
+CMD node app.js
+
+d
